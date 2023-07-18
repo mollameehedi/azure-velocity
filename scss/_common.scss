@@ -1,0 +1,65 @@
+/* Reset CSS */
+/*  Fonts family Link */
+
+@font-face {
+  font-family: "Gilroy_Bold";
+  font-style: bold;
+  font-weight: 700;
+  src: url("../fonts/Gilroy-Bold.ttf");
+}
+@font-face {
+  font-family: "Gilroy_semibold";
+  font-weight: 500;
+  src: url("../fonts/gilroy/Gilroy-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Gilroy_medium";
+  font-weight: 500;
+  src: url("../fonts/gilroy/Gilroy-Medium.ttf");
+}
+@font-face {
+  font-family: "Gilroy_regular";
+  font-weight: 400;
+  src: url("../fonts/gilroy/Gilroy-Regular.ttf");
+}
+
+@font-face {
+  font-family: "AvenirNext_semibold";
+  src: url("../fonts/Avenir_Next/AvenirNextLTPro-DemiIt.otf");
+}
+@font-face {
+  font-family: "AvenirNextL_Regular";
+  font-weight: 400;
+  src: url("../fonts/Avenir_Next/AvenirNextLTPro-Regular.otf");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+html,
+body {
+  font-family: "AvenirNextL_Regular";
+  scroll-behavior: smooth;
+  font-size: 14px;
+}
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+button:hover,
+button:focus,
+button:active {
+  outline: none;
+}
+ul,
+ol {
+  list-style: none;
+}
