@@ -2,3 +2,29 @@
 %transition {
   transition: all linear 0.3s;
 }
+.button-basic {
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: $color-white;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.16);
+  border-radius: 100px;
+  color: $color-black;
+  padding: 3px 17px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+}
+.button-basic-2{
+  background: #fccd03;
+  color: #1c3c6b;
+  text-align: right;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 0;
+  font-size: 1rem;
+  line-height: 22px;
+  font-weight: 600;
+  font-family: Gilroy;
+}
