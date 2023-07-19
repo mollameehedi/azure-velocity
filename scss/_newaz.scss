@@ -1,0 +1,419 @@
+// ============== Promotion styling start =============
+#special-offer{
+    .special-offer-box{
+        .special-offer-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .title{
+                margin: 0 0 15px;
+                color: $color-black;
+                font-size: 30px;
+                line-height: 40px;
+                font-weight: 600;
+                font-family: Gilroy_semibold;
+            }
+            .offer-menu{
+                ul{
+                    display: flex;
+                    align-items: center;
+                    background-color: $color-gray-soft;
+                    padding: 5px 10px;
+                    margin: 0;
+                    border-radius: 100px;
+                    text-align: center;
+                    li{
+                        cursor: pointer;
+                        border-radius: 100px;
+                        padding: 0 20px;
+                        &.active{
+                            color: $color-black;
+                            background-color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+        .slider-item{
+            .item{
+                background-color: $color-white;
+                margin-right: 35px;
+                padding: 15px;
+                border-radius: 4px;
+                position: relative;
+                margin-bottom: 30px;
+               .offer-box{
+                img{
+                    object-fit: cover;
+                    border-radius: 8px;
+                }
+                .offer-content{
+                    width: 100%;
+                    margin: 20px 0;
+                    position: relative;
+                    z-index: 1;
+                    p{
+                        color: $color-black;
+                        font-size: 18px;
+                        line-height: 22px;
+                        font-weight: 600;
+                        font-family: Gilroy_semibold;
+                        &::selection{
+                            background-color: #4b5865;
+                        }
+                    }
+                }
+                
+               }
+               .offer-link{
+                  position: absolute;
+                  right: 5px;
+                  bottom: -12px;
+                  z-index: 3;
+                  .offer-btn{
+                    @extend .button-basic-2;
+                  }
+                  .arrow-icon{
+                    transform: rotate(30deg);
+                  }
+               }
+            }
+        }
+        .right_arrow{
+            position: absolute;
+            right: 48px;
+            top: 40%;
+            width: 30px;
+            height: 30px;
+            background-color: $color-white;
+            transform: translateY(-45%);
+            cursor: pointer;
+            z-index: 4;
+            border-radius: 50%;
+            background-color:  $color-white;
+            background-size: contain;
+            background-position: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px -4px #4b5865;
+            font-size: 12px;
+            color: #4b5865;
+       }
+       .left_arrow{
+            position: absolute;
+            left: 12px;
+            top: 40%;
+            width: 30px;
+            height: 30px;
+            background-color: $color-white;
+            transform: translateY(-45%);
+            cursor: pointer;
+            z-index: 4;
+            border-radius: 50%;
+            background-color: $color-white;
+            background-size: contain;
+            background-position: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px -4px #4b5865;
+            font-size: 12px;
+            color: #4b5865;
+        }
+        .slick-disabled {
+           visibility: hidden;
+        }
+    }
+}
+
+
+
+// ============== Promotion styling start =============
+#promotion{
+    margin: 40px 0 0;
+    .promotion-box{
+        position: relative;
+        .item{
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-right: 15px;
+            box-shadow: 0 0 8px 1px rgba(0,0,0,0.1);
+            .promotion-link{
+                position: absolute;
+                left: 50%;
+                bottom: 5px;
+                transform: translateX(-50%);
+                .promotion_btn{
+                    @extend .button-basic;
+                }
+            }
+        }
+        .right_arrow{
+            position: absolute;
+            right: 15px;
+            top: 47%;
+            width: 30px;
+            height: 30px;
+            background-color: $color-white;
+            transform: translateY(-45%);
+            cursor: pointer;
+            z-index: 4;
+            border-radius: 50%;
+            background-color:  $color-white;
+            background-size: contain;
+            background-position: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px -4px #4b5865;
+            font-size: 12px;
+            color: #4b5865;
+       }
+       .left_arrow{
+            position: absolute;
+            left: 25px;
+            top: 47%;
+            width: 30px;
+            height: 30px;
+            background-color: $color-white;
+            transform: translateY(-45%);
+            cursor: pointer;
+            z-index: 4;
+            border-radius: 50%;
+            background-color: $color-white;
+            background-size: contain;
+            background-position: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px -4px #4b5865;
+            font-size: 12px;
+            color: #4b5865;
+        }
+        .slick-disabled {
+           visibility: hidden;
+        }
+        .slick-list{
+            padding: 0px 10px !important;
+        }
+    }
+    
+}
+
+//  ============== Popular hotel styling start =============
+#popular-hotel{
+    margin: 40px 0 0;
+    .title{
+        margin: 0 0 15px;
+        color: $color-black;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 600;
+        font-family: Gilroy_semibold;
+    }
+    .popular-hotel{
+        position: relative;
+        .item{
+            margin-right: 10px;
+            position: relative;
+            .item-image{
+                position: relative;
+                overflow: hidden;
+                border-radius: 4px;
+                z-index: 3;
+                &::before{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                    transition: all 0.5s;
+                }
+                &:hover::before{
+                    background-color: rgba(0, 0, 0, 0.4);
+                }
+
+                img{
+                    border-radius: 4px;
+                    max-width: 100%;
+                    transition: all 0.5s;
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    transform: scale(1); 
+                    cursor: pointer;
+                    position: relative;
+                    object-fit: cover;
+                    box-shadow: inset 0 0 99999px rgba(0, 120, 255, 0.5);
+                }
+                &:hover img{
+                    transform: scale(1.125);
+                }
+            }
+            .hotel_info{
+                position: absolute;
+                z-index: 3;
+                left: 0;
+                bottom: 0;
+                color: $color-white;
+                padding: 0 15px 5px 10px;
+                h6{
+                    font-size: 18px;
+                    line-height: 20px;
+                    font-weight: 600;
+                    color: $color-white;
+                    margin-bottom: 2px;
+                    text-shadow: 1px 1px rgba(0,0,0,.2);
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 16px;
+                    font-weight: 400;
+                    color: $color-white;
+                    margin-bottom: 0;
+                }
+            }
+        }
+       .right_arrow{
+            position: absolute;
+            right: -10px;
+            top: 47%;
+            width: 30px;
+            height: 30px;
+            background-color: $color-white;
+            transform: translateY(-45%);
+            cursor: pointer;
+            z-index: 4;
+            border-radius: 50%;
+            background-color:  $color-white;
+            background-size: contain;
+            background-position: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px -4px #4b5865;
+            font-size: 12px;
+            color: #4b5865;
+       }
+       .left_arrow{
+            position: absolute;
+            left: -15px;
+            top: 47%;
+            width: 30px;
+            height: 30px;
+            background-color: $color-white;
+            transform: translateY(-45%);
+            cursor: pointer;
+            z-index: 4;
+            border-radius: 50%;
+            background-color:  $color-white;
+            background-size: contain;
+            background-position: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px -4px #4b5865;
+            font-size: 12px;
+            color: #4b5865;
+        }
+        .slick-disabled {
+           visibility: hidden;
+        }
+        
+    }
+}
+
+
+//  ============== Popular hotel styling start =============
+#footer{
+    margin: 40px 0 0;
+    background-color: $footer-bg;
+    padding: 80px 0 60px;
+    .footer-header{
+        h5{
+            color: $color-white;
+            line-height: 26px;
+            font-weight: 600;
+            text-transform: capitalize;
+            font-family: "AvenirNextL_Regular";
+        }
+    }
+    .discover-content{
+        display: flex;
+        .footer-links{
+            .footer-link{
+                display: block;
+                margin-bottom: 5px;
+                a{
+                    color: $color-white;
+                    font-size: 12px;
+                    line-height: 22px;
+                    font-family: "AvenirNextL_Regular";
+                }
+            }
+        }
+    }
+    .payment-content{
+        .payment-methods{
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+    }
+    .need-content{
+        p{
+            color: $color-white;
+            font-size: 12px;
+            line-height: 22px;
+            font-family: "AvenirNextL_Regular";
+        }
+    }
+    .contact-content{
+        .contact-links{
+            .contact-link{
+                display: block;
+                margin-bottom: 5px;
+                a{
+                    color: $color-white;
+                    font-size: 12px;
+                    line-height: 22px;
+                    font-family: "AvenirNextL_Regular";
+                }
+            }
+        }
+        .social-icons{
+            display: flex;
+            .social-icon{
+                .icon{
+                    background-color: $footer-icon-bg;
+                    margin-right: 10px;
+                    border-radius: 100%;
+                    width: 40px;
+                    line-height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+    hr{
+        border: 0;
+        border-top: 1px solid $color-white;
+        margin: 48px 0 0;
+    }
+    .copyright-box{
+        padding: 27px 0 0;
+        .footer-logo{
+            width: 165px;
+        }
+    }
+}
+//  ============== Footer styling end =============
