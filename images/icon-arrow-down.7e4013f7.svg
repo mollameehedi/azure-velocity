@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="7px" viewBox="0 0 11 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Icons/Line/Arrrow-down</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8.47411396,11.7602963 L4.03740684,7.32356638 C3.82342818,7.10958771 3.82342818,6.76267426 4.03740684,6.54871842 L4.55487771,6.03124756 C4.76849111,5.81763416 5.11469685,5.81722323 5.32881249,6.03033439 L8.86154935,9.54652003 L12.3942634,6.03033439 C12.608379,5.81722323 12.9545848,5.81763416 13.1681982,6.03124756 L13.685669,6.54871842 C13.8996477,6.76269709 13.8996477,7.10961054 13.685669,7.32356638 L9.24898474,11.7602963 C9.03500607,11.9742522 8.68809262,11.9742522 8.47411396,11.7602963 Z" id="path-1"></path>
+    </defs>
+    <g id="Hotel_User_part_UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Confirmation_details" transform="translate(-468.000000, -419.000000)">
+            <g id="Icons/Line/Arrrow-down" transform="translate(465.000000, 414.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Arrow-down" fill-opacity="0" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <g id="👷‍♂️Atoms/Colour/Dark-Grey/100%" mask="url(#mask-2)" fill="#056998" fill-rule="evenodd">
+                    <rect id="Rectangle" x="0" y="0" width="18.0321993" height="18.0321993"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -27,6 +27,210 @@ nav {
       }
     }
   }
+  .avatar_dropdown{
+    align-self: center;
+    .header_user{
+      margin-bottom: 0rem !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .nav_dropdown{
+        .dropdown{
+          .profile_toggle{
+            border-radius: 50%;
+            width: 37px;
+            height: 37px;
+            vertical-align: middle;
+            max-width: 100%;
+            max-height: auto;
+            text-align: center;
+            overflow: visible;
+            position: relative;
+            background-color: $color-black;
+            &::after{
+              border: none!important;
+              content: " ";
+              background-image: url("../images/dropdown-down.svg");
+              width: 16px;
+              height: 11px;
+              position: relative;
+              background-repeat: no-repeat;
+              background-position: 50%;
+              background-size: 16px;
+              top: 1px;
+              right: 0;
+              left: 12px;
+              padding: 0;
+              margin: 0;
+              vertical-align: 0;
+              color: #000;
+            }
+          }
+        }
+        .nav_dropdown{
+          .dropdown-menu{
+            padding: 0;
+          }
+           .dropdown_profile_items{
+               color: $color-gray;
+               li{
+                 .dropdown-item{
+                   padding: 5px 12px;
+                 }
+               }
+               .icon{
+                 color: $color-gray;
+                 margin-right: 5px;
+                 width: 15%;
+               }
+           }
+          .avatar_circle{
+           .avatar_icon{
+             font-size: 16px;
+           }
+          }
+        }
+      }
+      
+      .nav_dropdown_1{
+        margin-right: 72px;
+        .dropdown{
+          .dropdown-menu{
+
+          }
+          .region-and-currency{
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            vertical-align: middle;
+            max-width: 100%;
+            max-height: auto;
+            text-align: center;
+            overflow: visible;
+            position: relative;
+            background-color: $color-black;
+            position: relative;
+            cursor: pointer;
+            .currency_name{
+              color: $color-black;
+              margin-left: 20px;
+              vertical-align: text-top;
+              position: absolute;
+              top: -1px;
+              font-size: 14px;
+              font-weight: 600;
+              cursor: pointer;
+              padding-right: 16px;
+              color: $color-gray;
+            }
+            .flag{
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              background-color: red;
+              border: 4px solid green;
+              position: absolute;
+              inset: 0;
+            }
+            &::after{
+              border: none!important;
+              content: " ";
+              background-image: url("../images/icon-arrow-down.7e4013f7.svg");
+              width: 12px;
+              height: 12px;
+              position: relative;
+              background-repeat: no-repeat;
+              top: -2px;
+              right: 0;
+              left: 56px;
+              padding: 0;
+              margin: 0;
+              vertical-align: 0;
+              color: $color-gray;
+            }
+            
+          }
+        }
+        .nav_dropdown{
+          .dropdown-menu{
+            padding: 0;
+          }
+           .dropdown_profile_items{
+               color: $color-gray;
+               li{
+                 .dropdown-item{
+                   padding: 5px 12px;
+                 }
+               }
+               .icon{
+                 color: $color-gray;
+                 margin-right: 5px;
+                 width: 15%;
+               }
+           }
+          .avatar_circle{
+           .avatar_icon{
+             font-size: 16px;
+           }
+          }
+        }
+      }
+      .dropdown_currency_items{
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+        right: -58px;
+        top: 40px;
+        width: 300px;
+        color: $color-gray;
+        .dropdown-item{
+          padding: 0 !important;
+        }
+        h5{
+          flex-grow: 1rem;
+          line-height: 18px;
+          font-weight: 600;
+          color: $color-black;
+          margin-bottom: 20px;
+          font-size: 16px;
+        }
+        .region_box{
+          border-right: 1px solid #dbdde0;
+          padding-right: 15px;
+          margin-right: 15px;
+          min-width: 160px;
+          li{
+            margin-bottom: 10px;
+          }
+            img{
+              object-fit: contain;
+              width: 20px;
+              height: 20px;
+            }
+        }
+      }
+      .currency_wrap{
+        .currency_box{
+          ul{
+            li{
+              img{
+                float: right;
+              }
+            }
+          }
+        }
+        .apply_btn{
+          @extend .button-basic-2;
+          padding: 5px 12px;
+          margin-top: 50px;
+          display: block;
+        }
+      }
+      
+   }
+  }
+
+ 
 }
 // =========== Header section css end=================
 // =========== Hero section css start=================
