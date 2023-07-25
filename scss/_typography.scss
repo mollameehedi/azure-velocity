@@ -18,6 +18,8 @@ h1,
 h2,
 .h2 {
   font-size: 32px;
+  padding-bottom: 25px;
+  text-transform: capitalize;
 }
 h3,
 .h3 {
@@ -31,6 +33,21 @@ h5,
 .h5 {
   font-size: 18px;
 }
-ul{
+ul {
   padding-left: 0rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol,
+a,
+p {
+  margin-bottom: 0;
+  margin-top: 0;
 }
