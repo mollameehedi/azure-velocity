@@ -1,419 +1,1488 @@
-// ============== Promotion styling start =============
-#special-offer{
-    .special-offer-box{
-        .special-offer-header{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .title{
-                margin: 0 0 15px;
-                color: $color-black;
-                font-size: 30px;
-                line-height: 40px;
-                font-weight: 600;
-                font-family: Gilroy_semibold;
-            }
-            .offer-menu{
-                ul{
-                    display: flex;
-                    align-items: center;
-                    background-color: $color-gray-soft;
-                    padding: 5px 10px;
-                    margin: 0;
-                    border-radius: 100px;
-                    text-align: center;
-                    li{
-                        cursor: pointer;
-                        border-radius: 100px;
-                        padding: 0 20px;
-                        &.active{
-                            color: $color-black;
-                            background-color: $color-white;
-                        }
-                    }
-                }
-            }
-        }
-        .slider-item{
-            .item{
-                background-color: $color-white;
-                margin-right: 35px;
-                padding: 15px;
-                border-radius: 4px;
-                position: relative;
-                margin-bottom: 30px;
-               .offer-box{
-                img{
-                    object-fit: cover;
-                    border-radius: 8px;
-                }
-                .offer-content{
-                    width: 100%;
-                    margin: 20px 0;
-                    position: relative;
-                    z-index: 1;
-                    p{
-                        color: $color-black;
-                        font-size: 18px;
-                        line-height: 22px;
-                        font-weight: 600;
-                        font-family: Gilroy_semibold;
-                        &::selection{
-                            background-color: #4b5865;
-                        }
-                    }
-                }
-                
-               }
-               .offer-link{
-                  position: absolute;
-                  right: 5px;
-                  bottom: -12px;
-                  z-index: 3;
-                  .offer-btn{
-                    @extend .button-basic-2;
-                  }
-                  .arrow-icon{
-                    transform: rotate(30deg);
-                  }
-               }
-            }
-        }
-        .right_arrow{
-            position: absolute;
-            right: 48px;
-            top: 40%;
-            width: 30px;
-            height: 30px;
-            background-color: $color-white;
-            transform: translateY(-45%);
-            cursor: pointer;
-            z-index: 4;
-            border-radius: 50%;
-            background-color:  $color-white;
-            background-size: contain;
-            background-position: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 0 10px -4px #4b5865;
-            font-size: 12px;
-            color: #4b5865;
-       }
-       .left_arrow{
-            position: absolute;
-            left: 12px;
-            top: 40%;
-            width: 30px;
-            height: 30px;
-            background-color: $color-white;
-            transform: translateY(-45%);
-            cursor: pointer;
-            z-index: 4;
-            border-radius: 50%;
-            background-color: $color-white;
-            background-size: contain;
-            background-position: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 0 10px -4px #4b5865;
-            font-size: 12px;
-            color: #4b5865;
-        }
-        .slick-disabled {
-           visibility: hidden;
-        }
+// ============== campaign video styling start =============
+#campaign-video {
+  margin: 60px 0 0;
+  .campaign-video-box {
+    border-radius: 15px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      cursor: pointer;
     }
-}
-
-
-
-// ============== Promotion styling start =============
-#promotion{
-    margin: 40px 0 0;
-    .promotion-box{
-        position: relative;
-        .item{
-            position: relative;
-            overflow: hidden;
-            border-radius: 12px;
-            margin-right: 15px;
-            box-shadow: 0 0 8px 1px rgba(0,0,0,0.1);
-            .promotion-link{
-                position: absolute;
-                left: 50%;
-                bottom: 5px;
-                transform: translateX(-50%);
-                .promotion_btn{
-                    @extend .button-basic;
-                }
-            }
-        }
-        .right_arrow{
-            position: absolute;
-            right: 15px;
-            top: 47%;
-            width: 30px;
-            height: 30px;
-            background-color: $color-white;
-            transform: translateY(-45%);
-            cursor: pointer;
-            z-index: 4;
-            border-radius: 50%;
-            background-color:  $color-white;
-            background-size: contain;
-            background-position: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 0 10px -4px #4b5865;
-            font-size: 12px;
-            color: #4b5865;
-       }
-       .left_arrow{
-            position: absolute;
-            left: 25px;
-            top: 47%;
-            width: 30px;
-            height: 30px;
-            background-color: $color-white;
-            transform: translateY(-45%);
-            cursor: pointer;
-            z-index: 4;
-            border-radius: 50%;
-            background-color: $color-white;
-            background-size: contain;
-            background-position: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 0 10px -4px #4b5865;
-            font-size: 12px;
-            color: #4b5865;
-        }
-        .slick-disabled {
-           visibility: hidden;
-        }
-        .slick-list{
-            padding: 0px 10px !important;
-        }
+    &.active body {
+      box-shadow: 0 0 0 150vh rgba(255, 0, 0, 0.2);
+      background-color: #1c3c6b;
+      width: 100%;
+      height: 100vh;
     }
-    
+  }
+  
 }
+/* Magnific Popup CSS */
+.mfp-bg {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 502;
+    overflow: hidden;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+  }
+  
+  .mfp-wrap {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 503;
+    position: fixed;
+    outline: none !important;
+    -webkit-backface-visibility: hidden;
+  }
+  
+  .mfp-container {
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 0 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .mfp-container:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  
+  .mfp-align-top .mfp-container:before {
+    display: none;
+  }
+  
+  .mfp-content {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: left;
+    z-index: 505;
+  }
+  
+  .mfp-inline-holder .mfp-content,
+  .mfp-ajax-holder .mfp-content {
+    width: 100%;
+    cursor: auto;
+  }
+  
+  .mfp-ajax-cur {
+    cursor: progress;
+  }
+  
+  .mfp-zoom-out-cur,
+  .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+    cursor: -moz-zoom-out;
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out;
+  }
+  
+  .mfp-zoom {
+    cursor: pointer;
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: zoom-in;
+  }
+  
+  .mfp-auto-cursor .mfp-content {
+    cursor: auto;
+  }
+  
+  .mfp-close,
+  .mfp-arrow,
+  .mfp-preloader,
+  .mfp-counter {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .mfp-loading.mfp-figure {
+    display: none;
+  }
+  
+  .mfp-hide {
+    display: none !important;
+  }
+  
+  .mfp-preloader {
+    color: #cccccc;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    text-align: center;
+    margin-top: -0.8em;
+    left: 8px;
+    right: 8px;
+    z-index: 504;
+  }
+  
+  .mfp-preloader a {
+    color: #cccccc;
+  }
+  
+  .mfp-preloader a:hover {
+    color: white;
+  }
+  
+  .mfp-s-ready .mfp-preloader {
+    display: none;
+  }
+  
+  .mfp-s-error .mfp-content {
+    display: none;
+  }
+  
+  button.mfp-close,
+  button.mfp-arrow {
+    overflow: visible;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    display: block;
+    padding: 0;
+    z-index: 506;
+  }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  
+  .mfp-close {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+    text-align: center;
+    opacity: 0.65;
+    padding: 0 0 18px 10px;
+    color: white;
+    font-style: normal;
+    font-size: 28px;
+    font-family: Arial, Baskerville, monospace;
+  }
+  .mfp-close:hover,
+  .mfp-close:focus {
+    opacity: 1;
+  }
+  .mfp-close:active {
+    top: 1px;
+  }
+  
+  .mfp-close-btn-in .mfp-close {
+    color: #333333;
+  }
+  
+  .mfp-image-holder .mfp-close,
+  .mfp-iframe-holder .mfp-close {
+    color: white;
+    right: -6px;
+    text-align: right;
+    padding-right: 6px;
+    width: 100%;
+  }
+  
+  .mfp-counter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #cccccc;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  
+  .mfp-arrow {
+    position: absolute;
+    top: 0;
+    opacity: 0.65;
+    margin: 0;
+    top: 50%;
+    margin-top: -55px;
+    padding: 0;
+    width: 90px;
+    height: 110px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .mfp-arrow:active {
+    margin-top: -54px;
+  }
+  
+  .mfp-arrow:hover,
+  .mfp-arrow:focus {
+    opacity: 1;
+  }
+  
+  .mfp-arrow:before,
+  .mfp-arrow:after,
+  .mfp-arrow .mfp-b,
+  .mfp-arrow .mfp-a {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 35px;
+    margin-left: 35px;
+    border: solid transparent;
+  }
+  .mfp-arrow:after,
+  .mfp-arrow .mfp-a {
+    opacity: 0.8;
+    border-top-width: 12px;
+    border-bottom-width: 12px;
+    top: 8px;
+  }
+  .mfp-arrow:before,
+  .mfp-arrow .mfp-b {
+    border-top-width: 20px;
+    border-bottom-width: 20px;
+  }
+  
+  .mfp-arrow-left {
+    left: 0;
+  }
+  .mfp-arrow-left:after,
+  .mfp-arrow-left .mfp-a {
+    border-right: 12px solid black;
+    left: 5px;
+  }
+  .mfp-arrow-left:before,
+  .mfp-arrow-left .mfp-b {
+    border-right: 20px solid white;
+  }
+  
+  .mfp-arrow-right {
+    right: 0;
+  }
+  .mfp-arrow-right:after,
+  .mfp-arrow-right .mfp-a {
+    border-left: 12px solid black;
+    left: 3px;
+  }
+  .mfp-arrow-right:before,
+  .mfp-arrow-right .mfp-b {
+    border-left: 20px solid white;
+  }
+  
+  .mfp-iframe-holder {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .mfp-iframe-holder .mfp-content {
+    line-height: 0;
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  .mfp-iframe-scaler {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-top: 56.25%;
+  }
+  
+  .mfp-iframe-scaler iframe {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background: black;
+  }
+  
+  .mfp-iframe-holder .mfp-close {
+    top: -43px;
+  }
+  
+  /* Main image in popup */
+  img.mfp-img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    line-height: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 0 40px;
+    margin: 0 auto;
+  }
+  
+  /* The shadow behind the image */
+  .mfp-figure:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 40px;
+    bottom: 40px;
+    display: block;
+    right: 0;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  .mfp-figure {
+    line-height: 0;
+  }
+  
+  .mfp-bottom-bar {
+    margin-top: -36px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    cursor: auto;
+  }
+  
+  .mfp-title {
+    text-align: left;
+    line-height: 18px;
+    color: #f3f3f3;
+    word-break: break-word;
+    padding-right: 36px;
+  }
+  
+  .mfp-figure small {
+    color: #bdbdbd;
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  .mfp-image-holder .mfp-content {
+    max-width: 100%;
+  }
+  
+  .mfp-gallery .mfp-image-holder .mfp-figure {
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 800px) and (orientation: landscape),
+    screen and (max-height: 300px) {
+    /**
+       * Remove all paddings around the image on small screen
+       */
+    .mfp-img-mobile .mfp-image-holder {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    .mfp-img-mobile img.mfp-img {
+      padding: 0;
+    }
+  
+    /* The shadow behind the image */
+    .mfp-img-mobile .mfp-figure:after {
+      top: 0;
+      bottom: 0;
+    }
+  
+    .mfp-img-mobile .mfp-bottom-bar {
+      background: rgba(0, 0, 0, 0.6);
+      bottom: 0;
+      margin: 0;
+      top: auto;
+      padding: 3px 5px;
+      position: fixed;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  
+    .mfp-img-mobile .mfp-bottom-bar:empty {
+      padding: 0;
+    }
+  
+    .mfp-img-mobile .mfp-counter {
+      right: 5px;
+      top: 3px;
+    }
+  
+    .mfp-img-mobile .mfp-close {
+      top: 0;
+      right: 0;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      background: rgba(0, 0, 0, 0.6);
+      position: fixed;
+      text-align: center;
+      padding: 0;
+    }
+  
+    .mfp-img-mobile .mfp-figure small {
+      display: inline;
+      margin-left: 5px;
+    }
+  }
+  @media all and (max-width: 800px) {
+    .mfp-arrow {
+      -webkit-transform: scale(0.75);
+      transform: scale(0.75);
+    }
+  
+    .mfp-arrow-left {
+      -webkit-transform-origin: 0;
+      transform-origin: 0;
+    }
+  
+    .mfp-arrow-right {
+      -webkit-transform-origin: 100%;
+      transform-origin: 100%;
+    }
+  
+    .mfp-container {
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+  }
+  .mfp-ie7 .mfp-img {
+    padding: 0;
+  }
+  .mfp-ie7 .mfp-bottom-bar {
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+  }
+  .mfp-ie7 .mfp-container {
+    padding: 0;
+  }
+  .mfp-ie7 .mfp-content {
+    padding-top: 44px;
+  }
+  .mfp-ie7 .mfp-close {
+    top: 0;
+    right: 0;
+    padding-top: 0;
+  }
 
-//  ============== Popular hotel styling start =============
-#popular-hotel{
-    margin: 40px 0 0;
-    .title{
+// ============== Hot Deals styling start =============
+#hot-deal {
+  margin: 60px 0 0;
+  .hot-deal-wrapper {
+    .hot-deal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title {
         margin: 0 0 15px;
         color: $color-black;
         font-size: 30px;
         line-height: 40px;
         font-weight: 600;
         font-family: Gilroy_semibold;
-    }
-    .popular-hotel{
-        position: relative;
-        .item{
-            margin-right: 10px;
-            position: relative;
-            .item-image{
-                position: relative;
-                overflow: hidden;
-                border-radius: 4px;
-                z-index: 3;
-                &::before{
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    background-color: rgba(0, 0, 0, 0.2);
-                    z-index: 1;
-                    transition: all 0.5s;
-                }
-                &:hover::before{
-                    background-color: rgba(0, 0, 0, 0.4);
-                }
-
-                img{
-                    border-radius: 4px;
-                    max-width: 100%;
-                    transition: all 0.5s;
-                    display: block;
-                    width: 100%;
-                    height: auto;
-                    transform: scale(1); 
-                    cursor: pointer;
-                    position: relative;
-                    object-fit: cover;
-                    box-shadow: inset 0 0 99999px rgba(0, 120, 255, 0.5);
-                }
-                &:hover img{
-                    transform: scale(1.125);
-                }
-            }
-            .hotel_info{
-                position: absolute;
-                z-index: 3;
-                left: 0;
-                bottom: 0;
-                color: $color-white;
-                padding: 0 15px 5px 10px;
-                h6{
-                    font-size: 18px;
-                    line-height: 20px;
-                    font-weight: 600;
-                    color: $color-white;
-                    margin-bottom: 2px;
-                    text-shadow: 1px 1px rgba(0,0,0,.2);
-                }
-                p{
-                    font-size: 14px;
-                    line-height: 16px;
-                    font-weight: 400;
-                    color: $color-white;
-                    margin-bottom: 0;
-                }
-            }
-        }
-       .right_arrow{
-            position: absolute;
-            right: -10px;
-            top: 47%;
-            width: 30px;
-            height: 30px;
-            background-color: $color-white;
-            transform: translateY(-45%);
+      }
+      .hot-deal-menu {
+        ul {
+          display: flex;
+          align-items: center;
+          background-color: $color-white;
+          padding: 5px 10px;
+          margin: 0;
+          border-radius: 100px;
+          text-align: center;
+          li {
             cursor: pointer;
-            z-index: 4;
-            border-radius: 50%;
-            background-color:  $color-white;
-            background-size: contain;
-            background-position: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 0 10px -4px #4b5865;
-            font-size: 12px;
-            color: #4b5865;
-       }
-       .left_arrow{
-            position: absolute;
-            left: -15px;
-            top: 47%;
-            width: 30px;
-            height: 30px;
-            background-color: $color-white;
-            transform: translateY(-45%);
-            cursor: pointer;
-            z-index: 4;
-            border-radius: 50%;
-            background-color:  $color-white;
-            background-size: contain;
-            background-position: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 0 10px -4px #4b5865;
-            font-size: 12px;
-            color: #4b5865;
+            border-radius: 100px;
+            padding: 0 20px;
+            &.active {
+              color: $color-black;
+              background-color: $body-bg;
+            }
+          }
         }
-        .slick-disabled {
-           visibility: hidden;
-        }
-        
+      }
     }
+    .hot-deal {
+      margin-top: 2px;
+      position: relative;
+      padding: 5px 1px 24px 12px;
+      .item {
+        .hot-deal-box {
+          background-color: $color-white;
+          margin-right: 35px;
+          padding: 15px;
+          border-radius: 4px;
+          margin-top: 30px;
+          position: relative;
+          margin-bottom: 30px;
+          .deal-wrap {
+            display: -webkit-box;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .deal-image-box {
+              width: 160px;
+              height: 120px;
+              position: relative;
+              top: -25px;
+              left: -25px;
+              z-index: 999;
+              img {
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+              }
+            }
+            .hot-deal-content {
+              margin-top: 10px;
+              width: 60%;
+              h6 {
+                color: $color-black;
+                font-size: 18px;
+                line-height: 22px;
+                font-weight: 600;
+                font-family: Gilroy_semibold;
+              }
+              p {
+                color: $color-gray;
+                margin-top: 5px;
+                font-size: 16px;
+                font-weight: 400;
+              }
+            }
+          }
+          .hot-deal-link {
+            position: absolute;
+            right: 5px;
+            bottom: -12px;
+            z-index: 3;
+            .hot-deal-btn {
+              @extend .button-basic-2;
+            }
+            .arrow-icon {
+              transform: rotate(30deg);
+            }
+          }
+        }
+        .promo-code {
+          width: max-content;
+          color: #1c3c6b;
+          margin-top: 10px;
+          position: relative;
+          padding: 10px 0 5px;
+          display: flex;
+          align-items: center;
+          .promo {
+            background-color: $body-bg;
+            padding: 4px 10px;
+            border-radius: 4px;
+            bottom: 5px;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            img {
+              height: 20px;
+              width: auto;
+            }
+            .code-tag {
+              font-size: 16px;
+              line-height: 20px;
+              font-weight: 400;
+              color: $color-black;
+              padding-left: 5px;
+              vertical-align: text-top;
+              font-family: Gilroy_semibold;
+            }
+          }
+        }
+      }
+    }
+    .right_arrow {
+      position: absolute;
+      right: 77px;
+      top: 47%;
+      width: 30px;
+      height: 30px;
+      background-color: $color-white;
+      transform: translateY(-45%);
+      cursor: pointer;
+      z-index: 4;
+      border-radius: 50%;
+      background-color: $color-white;
+      background-size: contain;
+      background-position: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px -4px #4b5865;
+      font-size: 12px;
+      color: #4b5865;
+    }
+    .left_arrow {
+      position: absolute;
+      left: 52px;
+      top: 47%;
+      width: 30px;
+      height: 30px;
+      background-color: $color-white;
+      transform: translateY(-45%);
+      cursor: pointer;
+      z-index: 4;
+      border-radius: 50%;
+      background-color: $color-white;
+      background-size: contain;
+      background-position: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px -4px #4b5865;
+      font-size: 12px;
+      color: #4b5865;
+    }
+    .slick-disabled {
+      visibility: hidden;
+    }
+  }
 }
 
+// ============== special offer styling start =============
+#special-offer {
+  margin: 40px 0 0;
+  .special-offer-box {
+    .special-offer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        margin: 0 0 15px;
+        color: $color-black;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 600;
+        font-family: Gilroy_semibold;
+      }
+      .offer-menu {
+        ul {
+          display: flex;
+          align-items: center;
+          background-color: $color-white;
+          padding: 5px 10px;
+          margin: 0;
+          border-radius: 100px;
+          text-align: center;
+          li {
+            cursor: pointer;
+            border-radius: 100px;
+            padding: 0 20px;
+            &.active {
+              color: $color-black;
+              background-color: $body-bg;
+            }
+          }
+        }
+      }
+    }
+    .slider-item {
+        margin-top: 2px;
+        position: relative;
+        padding: 12px 2px 24px 0px;
+      .item {
+        background-color: $color-white;
+        margin-right: 12px;
+        padding: 15px;
+        border-radius: 4px;
+        position: relative;
+        margin-bottom: 30px;
+        .offer-box {
+          img {
+            object-fit: cover;
+            border-radius: 8px;
+          }
+          .offer-content {
+            width: 100%;
+            margin: 20px 0;
+            position: relative;
+            z-index: 1;
+            p {
+              color: $color-black;
+              font-size: 18px;
+              line-height: 22px;
+              font-weight: 600;
+              font-family: Gilroy_semibold;
+              &::selection {
+                background-color: #4b5865;
+              }
+            }
+          }
+        }
+        .offer-link {
+          position: absolute;
+          right: 5px;
+          bottom: -12px;
+          z-index: 3;
+          .offer-btn {
+            @extend .button-basic-2;
+          }
+          .arrow-icon {
+            transform: rotate(30deg);
+          }
+        }
+      }
+    }
+    .right_arrow {
+      position: absolute;
+      right: 48px;
+      top: 40%;
+      width: 30px;
+      height: 30px;
+      background-color: $color-white;
+      transform: translateY(-45%);
+      cursor: pointer;
+      z-index: 4;
+      border-radius: 50%;
+      background-color: $color-white;
+      background-size: contain;
+      background-position: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px -4px #4b5865;
+      font-size: 12px;
+      color: #4b5865;
+    }
+    .left_arrow {
+      position: absolute;
+      left: 12px;
+      top: 40%;
+      width: 30px;
+      height: 30px;
+      background-color: $color-white;
+      transform: translateY(-45%);
+      cursor: pointer;
+      z-index: 4;
+      border-radius: 50%;
+      background-color: $color-white;
+      background-size: contain;
+      background-position: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px -4px #4b5865;
+      font-size: 12px;
+      color: #4b5865;
+    }
+    .slick-disabled {
+      visibility: hidden;
+    }
+  }
+}
+
+// ============== Promotion styling start =============
+#promotion {
+  margin: 60px 0 0;
+  .promotion-box {
+    position: relative;
+    .item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      margin-right: 15px;
+      box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+      .promotion-link {
+        position: absolute;
+        left: 50%;
+        bottom: 5px;
+        transform: translateX(-50%);
+        .promotion_btn {
+          @extend .button-basic;
+        }
+      }
+    }
+    .right_arrow {
+      position: absolute;
+      right: 15px;
+      top: 47%;
+      width: 30px;
+      height: 30px;
+      background-color: $color-white;
+      transform: translateY(-45%);
+      cursor: pointer;
+      z-index: 4;
+      border-radius: 50%;
+      background-color: $color-white;
+      background-size: contain;
+      background-position: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px -4px #4b5865;
+      font-size: 12px;
+      color: #4b5865;
+    }
+    .left_arrow {
+      position: absolute;
+      left: 25px;
+      top: 47%;
+      width: 30px;
+      height: 30px;
+      background-color: $color-white;
+      transform: translateY(-45%);
+      cursor: pointer;
+      z-index: 4;
+      border-radius: 50%;
+      background-color: $color-white;
+      background-size: contain;
+      background-position: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px -4px #4b5865;
+      font-size: 12px;
+      color: #4b5865;
+    }
+    .slick-disabled {
+      visibility: hidden;
+    }
+    .slick-list {
+      padding: 0px 10px !important;
+    }
+  }
+}
 
 //  ============== Popular hotel styling start =============
-#footer{
-    margin: 40px 0 0;
-    background-color: $footer-bg;
-    padding: 80px 0 60px;
-    .footer-header{
-        h5{
-            color: $color-white;
-            line-height: 26px;
-            font-weight: 600;
-            text-transform: capitalize;
-            font-family: "AvenirNextL_Regular";
+#popular-hotel {
+  margin: 60px 0 0;
+  .title {
+    margin: 0 0 15px;
+    color: $color-black;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    font-family: Gilroy_semibold;
+  }
+  .popular-hotel {
+    position: relative;
+    .item {
+      margin-right: 10px;
+      position: relative;
+      .item-image {
+        position: relative;
+        overflow: hidden;
+        border-radius: 4px;
+        z-index: 3;
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: rgba(0, 0, 0, 0.2);
+          z-index: 1;
+          transition: all 0.5s;
         }
-    }
-    .discover-content{
-        display: flex;
-        .footer-links{
-            .footer-link{
-                display: block;
-                margin-bottom: 5px;
-                a{
-                    color: $color-white;
-                    font-size: 12px;
-                    line-height: 22px;
-                    font-family: "AvenirNextL_Regular";
-                }
-            }
+        &:hover::before {
+          background-color: rgba(0, 0, 0, 0.4);
         }
-    }
-    .payment-content{
-        .payment-methods{
-            display: flex;
-            gap: 5px;
-            flex-wrap: wrap;
+
+        img {
+          border-radius: 4px;
+          max-width: 100%;
+          transition: all 0.5s;
+          display: block;
+          width: 100%;
+          height: auto;
+          transform: scale(1);
+          cursor: pointer;
+          position: relative;
+          object-fit: cover;
+          box-shadow: inset 0 0 99999px rgba(0, 120, 255, 0.5);
         }
-    }
-    .need-content{
-        p{
-            color: $color-white;
-            font-size: 12px;
-            line-height: 22px;
-            font-family: "AvenirNextL_Regular";
+        &:hover img {
+          transform: scale(1.125);
         }
-    }
-    .contact-content{
-        .contact-links{
-            .contact-link{
-                display: block;
-                margin-bottom: 5px;
-                a{
-                    color: $color-white;
-                    font-size: 12px;
-                    line-height: 22px;
-                    font-family: "AvenirNextL_Regular";
-                }
-            }
+      }
+      .hotel_info {
+        position: absolute;
+        z-index: 3;
+        left: 0;
+        bottom: 0;
+        color: $color-white;
+        padding: 0 15px 5px 10px;
+        h6 {
+          font-size: 18px;
+          line-height: 20px;
+          font-weight: 600;
+          color: $color-white;
+          margin-bottom: 2px;
+          text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
         }
-        .social-icons{
-            display: flex;
-            .social-icon{
-                .icon{
-                    background-color: $footer-icon-bg;
-                    margin-right: 10px;
-                    border-radius: 100%;
-                    width: 40px;
-                    line-height: 40px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    color: $color-white;
-                }
-            }
+        p {
+          font-size: 14px;
+          line-height: 16px;
+          font-weight: 400;
+          color: $color-white;
+          margin-bottom: 0;
         }
+      }
     }
-    hr{
-        border: 0;
-        border-top: 1px solid $color-white;
-        margin: 48px 0 0;
+    .right_arrow {
+      position: absolute;
+      right: -10px;
+      top: 47%;
+      width: 30px;
+      height: 30px;
+      background-color: $color-white;
+      transform: translateY(-45%);
+      cursor: pointer;
+      z-index: 4;
+      border-radius: 50%;
+      background-color: $color-white;
+      background-size: contain;
+      background-position: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px -4px #4b5865;
+      font-size: 12px;
+      color: #4b5865;
     }
-    .copyright-box{
-        padding: 27px 0 0;
-        .footer-logo{
-            width: 165px;
+    .left_arrow {
+      position: absolute;
+      left: -15px;
+      top: 47%;
+      width: 30px;
+      height: 30px;
+      background-color: $color-white;
+      transform: translateY(-45%);
+      cursor: pointer;
+      z-index: 4;
+      border-radius: 50%;
+      background-color: $color-white;
+      background-size: contain;
+      background-position: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px -4px #4b5865;
+      font-size: 12px;
+      color: #4b5865;
+    }
+    .slick-disabled {
+      visibility: hidden;
+    }
+  }
+}
+
+//  ============== Popular hotel styling start =============
+#footer {
+  margin: 60px 0 0;
+  background-color: $footer-bg;
+  padding: 80px 0 60px;
+  .footer-header {
+    h5 {
+      color: $color-white;
+      line-height: 26px;
+      font-weight: 600;
+      text-transform: capitalize;
+      font-family: "AvenirNextL_Regular";
+    }
+  }
+  .discover-content {
+    display: flex;
+    .footer-links {
+      .footer-link {
+        display: block;
+        margin-bottom: 5px;
+        a {
+          color: $color-white;
+          font-size: 12px;
+          line-height: 22px;
+          font-family: "AvenirNextL_Regular";
         }
+      }
     }
+  }
+  .payment-content {
+    .payment-methods {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+  }
+  .need-content {
+    p {
+      color: $color-white;
+      font-size: 12px;
+      line-height: 22px;
+      font-family: "AvenirNextL_Regular";
+    }
+  }
+  .contact-content {
+    .contact-links {
+      .contact-link {
+        display: block;
+        margin-bottom: 5px;
+        a {
+          color: $color-white;
+          font-size: 12px;
+          line-height: 22px;
+          font-family: "AvenirNextL_Regular";
+        }
+      }
+    }
+    .social-icons {
+      display: flex;
+      .social-icon {
+        .icon {
+          background-color: $footer-icon-bg;
+          margin-right: 10px;
+          border-radius: 100%;
+          width: 40px;
+          line-height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $color-white;
+        }
+      }
+    }
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid $color-white;
+    margin: 48px 0 0;
+  }
+  .copyright-box {
+    padding: 27px 0 0;
+    .footer-logo {
+      width: 165px;
+    }
+  }
 }
 //  ============== Footer styling end =============
+
+// ============== special offer details styling start =============
+#special-offer-wrap{
+    background-color: $color-white !important;
+}
+#special-offer-details{
+  margin: 0 0 60px;
+  .banner-box{
+    background-color: rgba(28,60,107,.03);
+    width: 100%;
+    height: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .offer-info-card{
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: $body-bg;
+    color: $color-black;
+    border-radius: 5px;
+    margin: 45px 0;
+    padding: 15px;
+    
+    .offer-info{
+      h4{
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 600;
+        margin-bottom: 6px;
+        font-family: Gilroy_semibold;
+      }
+      p{
+        font-size: 13px;
+        line-height: 22px;
+        font-weight: 400;
+        margin: 0;
+      }
+    }
+    .offer_btn{
+      @extend .button-basic-2;
+      padding: 10px 24px;
+      &:hover{
+         box-shadow: 0 8px 25px -8px #fccd03;
+      }
+    }
+  }
+  .offer-details{
+    h4{
+      color: $color-black;
+      font-size: 26px;
+      line-height: 40px;
+      font-weight: 600;
+    }
+    .offer-content{
+      .offer-lists{
+        padding: 0 15px;
+        margin: 0;
+        color: $color-gray;
+        font-size: 16ppx;
+        line-height: 26px;
+        font-weight: 400;
+        list-style-type: disc;
+      }
+    }
+  }
+  .terms-conditions{
+    margin-top: 40px;
+    h4{
+      color: $color-black;
+      font-size: 26px;
+      line-height: 40px;
+      font-weight: 600;
+    }
+    .terms-content{
+      .terms-lists{
+        padding: 0 15px;
+        margin: 0;
+        color: $color-gray;
+        font-size: 16ppx;
+        line-height: 26px;
+        font-weight: 400;
+        list-style-type: disc;
+      }
+    }
+  }
+}
+// ============== special offer details styling end =============
+
+// ============== Hot Deals styling start =============
+#hot-deal-wrap{
+  background-color: $color-white;
+}
+#hot-deal-details{
+  .banner-box{
+    background-color: rgba(28,60,107,.03);
+    width: 100%;
+    height: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .offer-brief{
+    padding-top: 50px;
+    margin-bottom: 50px;
+    background-color: $color-white;
+    .offer-title{
+      color: $color-black;
+      font-size: 26px;
+      line-height: 40px;
+      font-weight: 600;
+      text-align: center;
+      font-family: Gilroy_semibold;
+    }
+    .offer-table{
+      margin: 60px 0 0;
+      .offer-info-card{
+        position: relative;
+        text-align: center;
+        background-color: rgba(28,60,107,.03);
+        border-radius: 5px;
+        padding: 15px 30px 30px;
+        .offer-img{
+          width: 120px;
+          height: 120px;
+          border-radius: 100%;
+          background: #fff;
+          -webkit-box-shadow: 0 10px 30px rgba(28,60,107,.05);
+          box-shadow: 0 10px 30px rgba(28,60,107,.05);
+          display: grid;
+          place-content: center;
+          margin: 0 auto;
+          position: absolute;
+          top: -60px;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+        }
+        .offer-content{
+          margin-top: 80px;
+          h6{
+            font-size: 20px;
+            line-height: 22px;
+            font-weight: 600;
+            font-family: Gilroy_semibold;
+            color: $color-black;
+          }
+          p{
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            color: $color-gray;
+          }
+
+        }
+      }
+    }
+  }
+  .avail-offer-wrapper{
+    margin: 50px 0;
+    background-color: rgba(28,60,107,.03);
+    padding: 60px 0 30px;
+    position: relative;
+    .avail-offer{
+      h4{
+        color: $color-black;
+        font-size: 26px;
+        line-height: 40px;
+        font-weight: 600;
+        text-align: center;
+        font-family: Gilroy_semibold;
+      }
+    }
+    .avail-table{
+      .step{
+        .step-one{
+          font-size: 70px;
+          line-height: 10px;
+          font-weight: 600;
+          color: #43caf9;
+          display: block;
+          margin-left: 12px;
+        }
+        .step-text{
+          color: $color-black;
+          font-size: 18px;
+          line-height: 28px;
+          font-weight: 600;
+        }
+      }
+      ul{
+        padding: 0 15px;
+        margin: 0;
+        color: #7b7b7b;
+        font-size: 16ppx;
+        line-height: 26px;
+        font-weight: 400;
+        list-style-type: disc;
+      }
+    }
+    .book-now{
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      bottom: -13px;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      .avail-btn{
+        @extend .button-basic-2;
+        padding: 10px 25px;
+        font-size: 24px;
+        &:hover{
+          box-shadow: 0 8px 25px -8px #fccd03;
+        }
+      }
+    }
+  }
+  .avail-table{
+    margin-top: 60px;
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  .terms-conditions{
+    margin: 100px 0 50px;
+    h4{
+      color: $color-black;
+      font-size: 26px;
+      line-height: 40px;
+      font-weight: 600;
+      font-family: Gilroy_semibold;
+    }
+    .terms-content{
+      ul{
+        padding: 0 15px;
+        margin: 0;
+        color: #7b7b7b;
+        font-size: 16ppx;
+        line-height: 26px;
+        font-weight: 400;
+        list-style-type: disc;
+      }
+    }
+  }
+  .faqs{
+    margin: 50px 0;
+     h4{
+      color: $color-black;
+      font-size: 26px;
+      line-height: 40px;
+      font-weight: 600;
+      font-family: Gilroy_semibold;
+     }
+    .accordion-button{
+      padding-left: 0 !important;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 500 !important;
+      color: #1c3c6b;
+      font-family: Gilroy_semibold;
+      background-color: transparent !important;
+     }
+     .accordion-button:not(.collapsed){
+      color: $color-black;
+     }
+     .accordion-button:focus{
+       border-color: #fff !important;
+       box-shadow: none !important;
+     }
+     .accordion-body{
+      font-size: 1rem;
+      line-height: 22px;
+      font-weight: 400;
+      margin: 5px 0 15px;
+      border-left: 4px solid #b0dfee;
+      padding-left: 10px;
+     }
+  }
+
+}
+// ============== Hot Deals styling end =============
+
+
+// ============== Refund policy styling start =============
+#refund-policy{
+  margin-top: 40px;
+  .refund-header{
+    h3{
+      font-size: 2.5rem;
+      line-height: 48px;
+      font-weight: 600;
+      color: $color-primary;
+      margin: 32px 0 16px;
+    }
+  }
+  .flight-policy{
+    h5{
+      font-size: 22px;
+      line-height: 28px;
+      font-weight: 600;
+      color: $color-black;
+    }
+    .flight-policy-content{
+      .flight-policy-lists{
+        padding: 0 15px;
+        margin: 0;
+        color: $color-gray;
+        font-size: 16ppx;
+        line-height: 26px;
+        font-weight: 400;
+        list-style-type: square;
+      }
+      p{
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
+      }
+    }
+  }
+  .hotel-policy{
+    margin-top: 5px;
+    h5{
+      font-size: 22px;
+      line-height: 28px;
+      font-weight: 600;
+      color: $color-black;
+    }
+    .hotel-policy-content{
+      .hotel-policy-lists{
+        padding: 0 15px;
+        margin: 0;
+        color: $color-gray;
+        font-size: 16ppx;
+        line-height: 26px;
+        font-weight: 400;
+        list-style-type: square;
+      }
+      p{
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
+      }
+    }
+  }
+  .tour-policy{
+    margin-top: 5px;
+    h5{
+      font-size: 22px;
+      line-height: 28px;
+      font-weight: 600;
+      color: $color-black;
+    }
+    .tour-policy-content{
+      .tour-policy-lists{
+        padding: 0 15px;
+        margin: 0;
+        color: $color-gray;
+        font-size: 16ppx;
+        line-height: 26px;
+        font-weight: 400;
+        list-style-type: square;
+      }
+      p{
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
+      }
+    }
+  }
+  
+}
+// ============== Refund policy styling end =============
+
+// ============== Terms Conditions styling start =============
+#terms-conditions{
+   margin: 40px 0 0;
+  .terms-conditions-wrapper{
+      background-color: $color-white;
+      margin: 20px 0;
+      padding: 30px;
+      border-radius: 4px;
+      padding: 20px;
+  }
+  
+}
+// ============== Terms Conditions styling end =============
+
