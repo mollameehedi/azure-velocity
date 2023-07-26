@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>azure-velocity</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/slick.css" />
     <link rel="stylesheet" href="/css/slick-theme.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
 </head>
 
 <body>
@@ -23,8 +23,8 @@
                 </div>
                 <div class="col-lg-7">
                     <ul class="header_navbar text-center">
-                        <li> <a href=""><img src="images/icon/hotel.svg" alt="">Hotel</a></li>
                         <li> <a href=""><img src="images/icon/flight.svg" alt="">Flight</a></li>
+                        <li> <a href=""><img src="images/icon/hotel.svg" alt="">Hotel</a></li>
                         <li> <a href=""><img src="images/icon/toure.svg" alt="">Tour</a></li>
                         <li> <a href=""><img src="images/icon/toure.svg" alt="">Visa</a></li>
                     </ul>
@@ -33,64 +33,34 @@
                     <ul class="header_user">
                         <li class="nav_dropdown_1">
                             <div class="dropdown">
-                                <a href="javascript:void(0)" class="btn btn-secondary dropdown-toggle region-and-currency" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-secondary dropdown-toggle region-and-currency" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     <div class="flag">
                                     </div>
                                     <span class="currency_name">BDT</span>
                                 </a>
-                                <ul class="dropdown-menu dropdown_currency_items">
-                                  <li>
-                                    <a class="dropdown-item" href="#">
-                                        <div class="region_box">
-                                            <h5>Region</h5>
-                                            <ul>
-                                                <li>
-                                                    <img src="./images/bangladesh_7826304.png" alt="bd flag" class="img-fluid">
-                                                     <span>Bangladesh</span>
-                                                     <img src="./images/icon-tick-brand.9d909617.svg" alt="" class="img-fluid">
-                                                </li>
-                                                <li>
-                                                    <img src="./images/pakistan_323352.png" alt="pk flag" class="img-fluid">
-                                                     <span>Pakistan</span>
-                                                     <img src="./images/icon-tick-brand.9d909617.svg" alt="" class="img-fluid">
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </a>
-                                 </li>
-                                 <li class="currency_wrap">
-                                    <a class="dropdown-item" href="#">
-                                        <div class="currency_box">
-                                            <h5>Currency</h5>
-                                            <ul>
-                                                <li>
-                                                     <span>BDT</span>
-                                                     <img src="./images/icon-tick-brand.9d909617.svg" alt="" class="img-fluid">
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </a>
-                                    <a href="" class="apply_btn">Apply</a>
-                                 </li>
-                                 
-                                </ul>
-                                
                             </div>
                         </li>
                         <li class="nav_dropdown">
                             <div class="dropdown">
-                                <a href="javascript:void(0)" class="btn btn-secondary dropdown-toggle profile_toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a href="javascript:void(0)" class="btn btn-secondary dropdown-toggle profile_toggle"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <span class="avatar_circle">
                                         <i class="fas fa-user avatar_icon"></i>
                                     </span>
                                 </a>
                                 <ul class="dropdown-menu dropdown_profile_items">
-                                  <li><a class="dropdown-item" href="#"> <i class="fas fa-user icon"></i> Profile</a></li>
-                                  <li><a class="dropdown-item" href="#"><i class="fas fa-tag icon"></i> my Booking</a></li>
-                                  <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt icon"></i> Sign Out</a></li>
+                                    <li><a class="dropdown-item" href="#"> <i class="fas fa-user icon"></i> Profile</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class="fas fa-tag icon"></i> my Booking</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt icon"></i> Sign
+                                            Out</a></li>
                                 </ul>
                             </div>
                         </li>
+
                     </ul>
 
                 </div>
@@ -107,16 +77,17 @@
                     <div class="hero-content">
                         <ul class="nav nav-pills" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                                    aria-selected="true"><img src="images/icon/hotel.svg" alt="">Hotel</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-profile" type="button" role="tab"
                                     aria-controls="pills-profile" aria-selected="false"><img
                                         src="images/icon/flight.svg" alt="">Flight</button>
                             </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true"><img src="images/icon/hotel.svg" alt="">Hotel</button>
+                            </li>
+
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-contact" type="button" role="tab"
@@ -217,7 +188,8 @@
                                 </div>
                             </div>
                             <div class="hot-deal-link">
-                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn
+                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn
                                     More</a>
                             </div>
                         </div>
@@ -241,7 +213,8 @@
                                 </div>
                             </div>
                             <div class="hot-deal-link">
-                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn
+                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn
                                     More</a>
                             </div>
                         </div>
@@ -265,7 +238,8 @@
                                 </div>
                             </div>
                             <div class="hot-deal-link">
-                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn
+                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn
                                     More</a>
                             </div>
                         </div>
@@ -289,7 +263,8 @@
                                 </div>
                             </div>
                             <div class="hot-deal-link">
-                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn
+                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn
                                     More</a>
                             </div>
                         </div>
@@ -313,7 +288,8 @@
                                 </div>
                             </div>
                             <div class="hot-deal-link">
-                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn
+                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn
                                     More</a>
                             </div>
                         </div>
@@ -337,7 +313,8 @@
                                 </div>
                             </div>
                             <div class="hot-deal-link">
-                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn
+                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn
                                     More</a>
                             </div>
                         </div>
@@ -361,7 +338,8 @@
                                 </div>
                             </div>
                             <div class="hot-deal-link">
-                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn
+                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn
                                     More</a>
                             </div>
                         </div>
@@ -385,7 +363,8 @@
                                 </div>
                             </div>
                             <div class="hot-deal-link">
-                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn
+                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn
                                     More</a>
                             </div>
                         </div>
@@ -409,7 +388,8 @@
                                 </div>
                             </div>
                             <div class="hot-deal-link">
-                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn
+                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn
                                     More</a>
                             </div>
                         </div>
@@ -433,7 +413,8 @@
                                 </div>
                             </div>
                             <div class="hot-deal-link">
-                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn
+                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn
                                     More</a>
                             </div>
                         </div>
@@ -457,7 +438,8 @@
                                 </div>
                             </div>
                             <div class="hot-deal-link">
-                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn
+                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn
                                     More</a>
                             </div>
                         </div>
@@ -481,7 +463,8 @@
                                 </div>
                             </div>
                             <div class="hot-deal-link">
-                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn
+                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn
                                     More</a>
                             </div>
                         </div>
@@ -505,7 +488,8 @@
                                 </div>
                             </div>
                             <div class="hot-deal-link">
-                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn
+                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn
                                     More</a>
                             </div>
                         </div>
@@ -529,7 +513,8 @@
                                 </div>
                             </div>
                             <div class="hot-deal-link">
-                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn
+                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn
                                     More</a>
                             </div>
                         </div>
@@ -553,7 +538,8 @@
                                 </div>
                             </div>
                             <div class="hot-deal-link">
-                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn
+                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn
                                     More</a>
                             </div>
                         </div>
@@ -577,7 +563,8 @@
                                 </div>
                             </div>
                             <div class="hot-deal-link">
-                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn
+                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn
                                     More</a>
                             </div>
                         </div>
@@ -601,7 +588,8 @@
                                 </div>
                             </div>
                             <div class="hot-deal-link">
-                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn
+                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn
                                     More</a>
                             </div>
                         </div>
@@ -625,7 +613,8 @@
                                 </div>
                             </div>
                             <div class="hot-deal-link">
-                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn
+                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn
                                     More</a>
                             </div>
                         </div>
@@ -649,7 +638,8 @@
                                 </div>
                             </div>
                             <div class="hot-deal-link">
-                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn
+                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn
                                     More</a>
                             </div>
                         </div>
@@ -673,7 +663,8 @@
                                 </div>
                             </div>
                             <div class="hot-deal-link">
-                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn
+                                <a href="hot-deal-details.html" target="_blank" class="hot-deal-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn
                                     More</a>
                             </div>
                         </div>
@@ -709,7 +700,8 @@
                                 <p>Stopover opportunity in İstanbul with Turkish Airlines</p>
                             </div>
                             <div class="offer-link">
-                                <a href="special-offer-details.html" target="_blank" class="offer-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn More</a>
+                                <a href="special-offer-details.html" target="_blank" class="offer-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -720,7 +712,8 @@
                                 <p>Stopover opportunity in İstanbul with Turkish Airlines</p>
                             </div>
                             <div class="offer-link">
-                                <a href="special-offer-details.html" target="_blank" class="offer-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn More</a>
+                                <a href="special-offer-details.html" target="_blank" class="offer-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -731,7 +724,8 @@
                                 <p>Stopover opportunity in İstanbul with Turkish Airlines</p>
                             </div>
                             <div class="offer-link">
-                                <a href="special-offer-details.html" target="_blank" class="offer-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn More</a>
+                                <a href="special-offer-details.html" target="_blank" class="offer-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -742,7 +736,8 @@
                                 <p>Stopover opportunity in İstanbul with Turkish Airlines</p>
                             </div>
                             <div class="offer-link">
-                                <a href="special-offer-details.html" target="_blank" class="offer-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn More</a>
+                                <a href="special-offer-details.html" target="_blank" class="offer-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -753,7 +748,8 @@
                                 <p>Stopover opportunity in İstanbul with Turkish Airlines</p>
                             </div>
                             <div class="offer-link">
-                                <a href="special-offer-details.html" target="_blank" class="offer-btn"> <i class="fas fa-arrow-up arrow-icon"></i> Learn More</a>
+                                <a href="special-offer-details.html" target="_blank" class="offer-btn"> <i
+                                        class="fas fa-arrow-up arrow-icon"></i> Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -766,6 +762,145 @@
     <!-- ====================================
             Special Offer section end
     ========================================-->
+
+
+    <!-- ====================================
+            Popular Route part start
+    ========================================-->
+    <section id="route">
+        <div class="container bg-white">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Most Popular route</h2>
+                </div>
+                <div class="col-lg-3">
+                    <a href="" class="route_item d-flex align-items-center  justify-content-between">
+                        <img src="images/icon/flight-mono.svg" alt="">
+                        <div class="route_content">
+                            <h4>Dhaka - London</h4>
+                            <p>from <strong>BDT 50,000</strong></p>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="" class="route_item d-flex align-items-center  justify-content-between">
+                        <img src="images/icon/flight-mono.svg" alt="">
+                        <div class="route_content">
+                            <h4>Dhaka - London</h4>
+                            <p>from <strong>BDT 50,000</strong></p>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="" class="route_item d-flex align-items-center  justify-content-between">
+                        <img src="images/icon/flight-mono.svg" alt="">
+                        <div class="route_content">
+                            <h4>Dhaka - London</h4>
+                            <p>from <strong>BDT 50,000</strong></p>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="" class="route_item d-flex align-items-center  justify-content-between">
+                        <img src="images/icon/flight-mono.svg" alt="">
+                        <div class="route_content">
+                            <h4>Dhaka - London</h4>
+                            <p>from <strong>BDT 50,000</strong></p>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="" class="route_item d-flex align-items-center  justify-content-between">
+                        <img src="images/icon/flight-mono.svg" alt="">
+                        <div class="route_content">
+                            <h4>Dhaka - London</h4>
+                            <p>from <strong>BDT 50,000</strong></p>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="" class="route_item d-flex align-items-center  justify-content-between">
+                        <img src="images/icon/flight-mono.svg" alt="">
+                        <div class="route_content">
+                            <h4>Dhaka - London</h4>
+                            <p>from <strong>BDT 50,000</strong></p>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="" class="route_item d-flex align-items-center  justify-content-between">
+                        <img src="images/icon/flight-mono.svg" alt="">
+                        <div class="route_content">
+                            <h4>Dhaka - London</h4>
+                            <p>from <strong>BDT 50,000</strong></p>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="" class="route_item d-flex align-items-center  justify-content-between">
+                        <img src="images/icon/flight-mono.svg" alt="">
+                        <div class="route_content">
+                            <h4>Dhaka - London</h4>
+                            <p>from <strong>BDT 50,000</strong></p>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="" class="route_item d-flex align-items-center  justify-content-between">
+                        <img src="images/icon/flight-mono.svg" alt="">
+                        <div class="route_content">
+                            <h4>Dhaka - London</h4>
+                            <p>from <strong>BDT 50,000</strong></p>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="" class="route_item d-flex align-items-center  justify-content-between">
+                        <img src="images/icon/flight-mono.svg" alt="">
+                        <div class="route_content">
+                            <h4>Dhaka - London</h4>
+                            <p>from <strong>BDT 50,000</strong></p>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="" class="route_item d-flex align-items-center  justify-content-between">
+                        <img src="images/icon/flight-mono.svg" alt="">
+                        <div class="route_content">
+                            <h4>Dhaka - London</h4>
+                            <p>from <strong>BDT 50,000</strong></p>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="" class="route_item d-flex align-items-center  justify-content-between">
+                        <img src="images/icon/flight-mono.svg" alt="">
+                        <div class="route_content">
+                            <h4>Dhaka - London</h4>
+                            <p>from <strong>BDT 50,000</strong></p>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================
+            Popular Route part end
+    ========================================-->
+
+
 
     <!-- ====================================
             Promotion section start
@@ -808,7 +943,25 @@
     ========================================-->
     <section id="popular-hotel">
         <div class="container">
-            <h3 class="title">Popular Hotels</h3>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="title">Popular Hotels</h3>
+                </div>
+                <div class="col-lg-12">
+                    <div class="populer_hotel_banner">
+                        <a href="#" class="w-100">
+                            <img src="./images/popular-hotel/banner.webp" alt="Popular Hotel" class="img-fluid w-100" />
+
+                        </a>
+                        <div class="hotel_banner_content">
+                            <p> <img src="images/icon/package.svg" /> 4 Packages</p>
+                            <h3>Kolkata</h3>
+                            <p>Start From <strong>BDT 15,000</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="popular-hotel">
                 <div class="item">
                     <a href="#">
