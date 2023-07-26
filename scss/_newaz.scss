@@ -1342,72 +1342,72 @@ img.mfp-img {
 // ============== Refund policy styling end =============
 
 // ============== Terms Conditions styling start =============
-#terms-conditions{
-   padding: 70px 0 0;
-  .terms-conditions-wrapper{
-      background-color: $color-white;
-      margin: 20px 0;
-      padding: 30px;
-      border-radius: 4px;
-      padding: 20px;
-      .terms-conditions-header{
-        display: flex;
-        width: 100%;
-        justify-content: flex-end;
-        select{
-          padding: 7px 16px;
-          border: 1px solid #d8d6de !important;
-          border-radius: 4px;
-        }
+#terms-conditions {
+  padding: 70px 0 0;
+  .terms-conditions-wrapper {
+    background-color: $color-white;
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 4px;
+    padding: 20px;
+    .terms-conditions-header {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      select {
+        padding: 7px 16px;
+        border: 1px solid #d8d6de !important;
+        border-radius: 4px;
       }
+    }
   }
 }
 // ============== Terms Conditions styling end =============
 
 // ============== Emi-policy styling start =============
-#emi-policy{
+#emi-policy {
   padding-top: 100px;
-  .banner-box{
-    background-color: rgba(28,60,107,.03);
+  .banner-box {
+    background-color: rgba(28, 60, 107, 0.03);
     width: 100%;
     height: 100%;
-    img{
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
-  .bank-wrap{
-    .bank-title{
-        font-size: 19px;
-        line-height: 24px;
-        font-weight: 700;
-        margin: 10px 0;
-        color: $color-black;
-        margin-top: 30px;
+  .bank-wrap {
+    .bank-title {
+      font-size: 19px;
+      line-height: 24px;
+      font-weight: 700;
+      margin: 10px 0;
+      color: $color-black;
+      margin-top: 30px;
+    }
+    .bank-box {
+      .banks {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 10px 40px;
+        padding: 0;
+        margin: 0;
       }
-      .bank-box{
-        .banks{
-          list-style: none;
-          display: grid;
-          grid-template-columns: repeat(8,1fr);
-          grid-gap: 10px 40px;
-          padding: 0;
-          margin: 0;
-        }
-      }
+    }
   }
-  .terms-conditions{
+  .terms-conditions {
     margin: 70px 0 50px;
-    h4{
+    h4 {
       color: $color-black;
       font-size: 26px;
       line-height: 40px;
       font-weight: 600;
       font-family: Gilroy_semibold;
     }
-    .terms-content{
-      ul{
+    .terms-content {
+      ul {
         padding: 0 15px;
         margin: 0;
         color: #7b7b7b;
@@ -1418,16 +1418,16 @@ img.mfp-img {
       }
     }
   }
-  .faqs{
+  .faqs {
     margin: 50px 0;
-     h4{
+    h4 {
       color: $color-black;
       font-size: 26px;
       line-height: 40px;
       font-weight: 600;
       font-family: Gilroy_semibold;
-     }
-    .accordion-button{
+    }
+    .accordion-button {
       padding-left: 0 !important;
       font-size: 16px;
       line-height: 22px;
@@ -1435,36 +1435,35 @@ img.mfp-img {
       color: #1c3c6b;
       font-family: Gilroy_semibold;
       background-color: transparent !important;
-     }
-     .accordion-button:not(.collapsed){
+    }
+    .accordion-button:not(.collapsed) {
       color: $color-black;
-     }
-     .accordion-button:focus{
-       border-color: #fff !important;
-       box-shadow: none !important;
-     }
-     .accordion-body{
+    }
+    .accordion-button:focus {
+      border-color: #fff !important;
+      box-shadow: none !important;
+    }
+    .accordion-body {
       font-size: 1rem;
       line-height: 22px;
       font-weight: 400;
       margin: 5px 0 15px;
       border-left: 4px solid #b0dfee;
       padding-left: 10px;
-     }
+    }
   }
-  
 }
 // ============== Emi-policy styling end =============
 
 // ============== privacy-policy styling start =============
-#privacy-policy{
+#privacy-policy {
   padding: 70px 0 0 0;
-  .privacy-policy-wrapper{
+  .privacy-policy-wrapper {
     margin: 20px 0;
     padding: 30px;
     background-color: #fff;
-    .privacy-policy-box{
-      h4{
+    .privacy-policy-box {
+      h4 {
         color: #056998;
         font-size: 20px;
         line-height: 30px;
@@ -1473,7 +1472,7 @@ img.mfp-img {
         margin: 0;
         margin-bottom: 5px;
       }
-      p{
+      p {
         color: $color-gray;
         font-size: 16px;
         line-height: 24px;
@@ -1481,59 +1480,58 @@ img.mfp-img {
         margin-bottom: 7px;
         text-align: left;
       }
-      .text-spacing{
+      .text-spacing {
         margin: 35px 0;
       }
     }
   }
-  
 }
 // ============== privacy-policy styling end =============
 
 // ============== my-profile styling start =============
-#my-profile{
-  padding: 100px 0 0 ;
-  .my-profile-wrapper{
-    .list-group{
+#my-profile {
+  padding: 100px 0 0;
+  .my-profile-wrapper {
+    .list-group {
       background-color: #fff;
-      .profile-image-box{
+      .profile-image-box {
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 10px;
         padding: 20px;
-        .profile-img{
-          width:112px;
+        .profile-img {
+          width: 112px;
           height: 112px;
           border-radius: 50%;
-          img{
+          img {
             width: 100%;
             height: 100%;
             object-fit: cover;
           }
         }
-        .input-file{
-          .custom-file-input{
+        .input-file {
+          .custom-file-input {
             opacity: 0;
             visibility: hidden;
             display: none;
           }
-          label{
+          label {
             font-size: 18px;
             line-height: 28px;
             font-weight: 600;
             color: $color-black;
             cursor: pointer;
             opacity: 0.8;
-            .icon{
+            .icon {
               margin-right: 5px;
             }
           }
         }
       }
     }
-    .list-group{
-      .list-group-item{
+    .list-group {
+      .list-group-item {
         border: none !important;
         font-size: 17px;
         line-height: 22px;
@@ -1542,16 +1540,16 @@ img.mfp-img {
         display: block;
         cursor: pointer;
         padding: 10px 20px;
-        .icon{
+        .icon {
           margin-right: 7px;
         }
-        &.active{
+        &.active {
           background-color: transparent !important;
         }
-        &:hover{
-          background-color: $body-bg
+        &:hover {
+          background-color: $body-bg;
         }
-        &:last-child{
+        &:last-child {
           color: rgb(5, 105, 152);
           font-size: 17px;
           line-height: 22px;
@@ -1561,44 +1559,43 @@ img.mfp-img {
       }
     }
   }
-  #personal-info{
-    .personal-info-wrapper{
+  #personal-info {
+    .personal-info-wrapper {
       display: flex;
       justify-content: space-between;
-      .personal-info-box{
-        h3{
+      .personal-info-box {
+        h3 {
           color: $color-black;
           font-weight: 800;
           font-size: 22px;
         }
-        p{
+        p {
           font-size: 16px;
           color: $color-gray;
         }
       }
-      .edit-btn{
+      .edit-btn {
         font-size: 18px;
         line-height: 28px;
         font-weight: 600;
         color: #1c3c6b;
         cursor: pointer;
-        .icon{
+        .icon {
           margin-right: 5px;
         }
       }
     }
-    
   }
-  .personal-info-details{
-    table{
-      .user-field{
+  .personal-info-details {
+    table {
+      .user-field {
         font-size: 16px;
         width: 25%;
         color: $color-gray;
         vertical-align: middle;
         padding: 15px;
       }
-      .user-value{
+      .user-value {
         font-size: 18px;
         line-height: 24px;
         font-weight: 600;
@@ -1606,35 +1603,118 @@ img.mfp-img {
         padding: 15px;
         text-align: left;
         opacity: 0.8;
-      } 
+      }
     }
   }
-  .card{
+  .card {
     padding: 15px !important;
   }
 }
 // ============== my-profile styling end =============
 
 // ============== signup form styling start =============
-#signup-wrapper{
+#signup-wrapper {
+  background-color: $body-bg;
   padding: 64px 0;
   position: relative;
-  .signup-title{
+  .signup-title {
     padding-bottom: 32px;
     font-size: 28px;
     font-weight: 800;
   }
-  .login_register_form{
+  .login_register_form {
+    border-top: 2px solid #1882ff;
     border-radius: 16px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,.16);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.16);
     background-color: #fff;
     padding: 40px;
     margin: 32px 0;
-    form{
-      .auth-inputs{
-        .input-group-text{
-          border: none !important;
-          background-color: transparent !important;
+    form {
+      .auth-inputs {
+        .input-group {
+          margin-bottom: 16px;
+          .input-group-text {
+            border: none !important;
+            background-color: transparent !important;
+          }
+          .icon {
+            font-size: 20px;
+            color: $color-gray;
+            margin-right: 15px;
+          }
+          .form-control {
+            padding: 16px 14px !important;
+          }
+          input {
+            outline-style: none !important;
+            box-shadow: none !important;
+            border-radius: 4px;
+          }
+          input:hover {
+            border-color: $color-black !important;
+          }
+          input:active,
+          input:focus {
+            border: 2px solid #1882ff !important;
+          }
+          .require {
+            color: #b71c39;
+          }
+          input:focus label {
+             color: #1882ff !important;
+          }
+        }
+        .submit-btn{
+          button{
+            display: inline-flex;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              -webkit-justify-content: center;
+              justify-content: center;
+              position: relative;
+              box-sizing: border-box;
+              -webkit-tap-highlight-color: transparent;
+              background-color: transparent;
+              outline: 0;
+              border: 0;
+              margin: 0;
+              border-radius: 0;
+              padding: 0;
+              cursor: pointer;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+              vertical-align: middle;
+              -moz-appearance: none;
+              -webkit-appearance: none;
+              -webkit-text-decoration: none;
+              text-decoration: none;
+              color: inherit;
+              font-family: Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Poppins,Helvetica Neue,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+              font-weight: 500;
+              font-size: 0.9375rem;
+              line-height: 1.75;
+              text-transform: uppercase;
+              min-width: 64px;
+              padding: 8px 22px;
+              border-radius: 4px;
+              -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+              transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+              color: #fff;
+              background-color: #1882ff;
+              box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+              width: 100%;
+              color: #fff;
+              &:hover{
+                background-color: #105bb2;
+                color: #fff;
+              }
+          }
         }
       }
     }
