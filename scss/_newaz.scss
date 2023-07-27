@@ -1491,6 +1491,7 @@ img.mfp-img {
 // ============== my-profile styling start =============
 #my-profile {
   padding: 100px 0 0;
+  background-color: $body-bg;
   .my-profile-wrapper {
     .list-group {
       background-color: #fff;
@@ -1560,6 +1561,7 @@ img.mfp-img {
     }
   }
   #personal-info {
+    margin-bottom: 30px;
     .personal-info-wrapper {
       display: flex;
       justify-content: space-between;
@@ -1588,6 +1590,9 @@ img.mfp-img {
   }
   .personal-info-details {
     table {
+      tbody tr:last-child {
+          border-color: transparent;
+       }
       .user-field {
         font-size: 16px;
         width: 25%;
@@ -1595,6 +1600,7 @@ img.mfp-img {
         vertical-align: middle;
         padding: 15px;
       }
+  
       .user-value {
         font-size: 18px;
         line-height: 24px;
@@ -1608,6 +1614,17 @@ img.mfp-img {
   }
   .card {
     padding: 15px !important;
+    border: none !important;
+  }
+  #travelers{
+    .travelers-info{
+      .travelers-header{
+        margin-bottom: 20px;
+        h3{
+          
+        }
+      }
+    }
   }
 }
 // ============== my-profile styling end =============
