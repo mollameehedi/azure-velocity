@@ -6,6 +6,7 @@ nav {
   top: 0px;
   left: 0px;
   padding: 10px 0px;
+  z-index: 999;
   .brand_logo {
     height: 80px;
   }
@@ -491,3 +492,186 @@ nav {
     }
   }
 }
+// ============== signin /login form styling start =============
+#signin-wrapper {
+  background-color: $color-white;
+  padding: 180px 0px 65px 0px;
+  position: relative;
+  .signup-title {
+    padding-bottom: 32px;
+    font-size: 28px;
+    font-weight: 800;
+  }
+  .login_register_form {
+    border-top: 2px solid #1882ff;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    padding: 40px;
+    margin: 32px 0;
+    form {
+      .auth-inputs {
+        .input-group {
+          margin-bottom: 16px;
+          .input-group-text {
+            border: none !important;
+            background-color: transparent !important;
+          }
+          .icon {
+            font-size: 20px;
+            color: $color-gray;
+            margin-right: 15px;
+          }
+          .form-control {
+            padding: 16px 14px !important;
+          }
+          input {
+            outline-style: none !important;
+            box-shadow: none !important;
+            border-radius: 4px;
+          }
+          input:hover {
+            border-color: $color-black !important;
+          }
+          input:active,
+          input:focus {
+            border: 2px solid #1882ff !important;
+          }
+          .require {
+            color: #b71c39;
+          }
+          input:focus label {
+            color: #1882ff !important;
+          }
+        }
+        .submit-btn {
+          ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+              width: 48%;
+              .auth_btn {
+                width: 100%;
+                padding: 10px 0px;
+                text-transform: capitalize;
+                font-size: 16px;
+                font-weight: 700;
+              }
+            }
+          }
+          button {
+            &:hover {
+              background-color: #105bb2;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .signin-link {
+      margin-top: 25px;
+      p {
+        font-size: 17px;
+        font-weight: 500;
+        color: $color-black;
+        a {
+          color: #1882ff;
+          font-weight: 600;
+          font-size: 18px;
+          padding: 8px 4px;
+          &:hover {
+            background-color: #f6faff;
+          }
+        }
+      }
+    }
+    .input_group {
+      span {
+        position: relative;
+        color: $color-gray;
+        font-weight: 600;
+        background-color: #fff;
+        display: inline-block;
+        padding: 10px;
+        font-size: 17px;
+      }
+      .or {
+        text-align: center;
+        margin: 2px 0;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 50%;
+          height: 2px;
+          width: 100%;
+          background-color: #eee;
+        }
+      }
+    }
+    .social-login {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      gap: 8px;
+      .facebook-box {
+        .fbtn {
+          font-weight: 700;
+          margin: 0;
+          padding: 10px 60px;
+          display: inline-block;
+          cursor: pointer;
+          outline: 0;
+          text-transform: uppercase;
+          white-space: nowrap;
+          border-radius: 4px;
+          font-size: 16px;
+          letter-spacing: 0.2px;
+        }
+        .fb_btn {
+          width: 100%;
+          background-color: #4267b2;
+          color: $color-white;
+          span {
+            font-size: 14px !important;
+          }
+        }
+      }
+      .google-box {
+        .gbtn {
+          width: 100%;
+          font-weight: 700;
+          margin: 0;
+          font-size: 16px;
+          padding: 10px 60px;
+          display: inline-block;
+          cursor: pointer;
+          outline: 0;
+          text-transform: uppercase;
+          white-space: nowrap;
+          border-radius: 4px;
+          font-size: 16px;
+          letter-spacing: 0.2px;
+        }
+        .g_btn {
+          background-color: #ea4335;
+          color: $color-white;
+        }
+      }
+      .icon {
+        margin-right: 5px;
+      }
+    }
+  }
+  .forgot-password {
+    a {
+      color: $color-gray;
+      font-size: 16px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+// ============== signin /login form styling end =============
